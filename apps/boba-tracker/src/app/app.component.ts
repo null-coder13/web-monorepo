@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { FeatureDogCardComponent } from '@web-dev/boba-tracker/feature-dog-card';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, FeatureDogCardComponent],
   selector: 'web-dev-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
