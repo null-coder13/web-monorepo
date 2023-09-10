@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'web-dev-feature-dog-card',
@@ -10,6 +10,8 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./feature-dog-card.component.css'],
 })
 export class FeatureDogCardComponent {
+  @Input() name!: string;
+  @Input() imgPath!: string;
   peed = false;
   pooped = false;
 
@@ -21,5 +23,3 @@ export class FeatureDogCardComponent {
     this.pooped = !this.pooped;
   }
 }
-
-//TODO: Add edit button to top right

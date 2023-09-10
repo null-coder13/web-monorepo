@@ -1,18 +1,19 @@
-<div class="h-3/4 w-3/4 rounded-xl overflow-hidden bg-slate-800 p-3 m-14">
+<div class="h-[45vh] pi:h-3/4 pi:w-3/4 rounded-xl bg-gray-700 p-3 m-5 pi:m-14">
     <div class="grid grid-cols-1 gap-2">
-      <div class="m-auto">
-        <img class="rounded-full" src="./assets/boba-full.jpg" width="100px" height="100px">
+      <div class="m-auto relative py-2">
+        <img class="rounded-full object-cover h-24 w-32" src="{{imgPath}}"/>
+        <h1 class="absolute px-4 my-1 text-center text-yellow-200 font-semibold w-full">{{name}}</h1>
       </div>
-      <div class="flex flex-row m-auto border-b-2 border-b-black p-2">
+      <div class="flex flex-row m-auto border-b-2 teal-bottom-border p-2">
         <p class="m-2 text-yellow-200 text-xs"><span class="text-sm">🚽</span> 10:00 AM</p>
         <p class="m-2 text-amber-200 text-xs"><span class="text-sm">💩</span> 10:00 AM</p>
       </div>
-      <div class="flex flex-row gap-4 m-auto">
+      <div class="flex flex-row gap-4 mx-auto">
       <button class="m-3" [class.pee-button]="peed" mat-raised-button (click)="togglePeed()">Pee</button>
-        <button class="m-3" [class.poop-button]="pooped" mat-raised-button (click)="togglePooped()">Poo</button>
+        <button class="m-3" [class.poop-button]="pooped" [class.white-text]="pooped" mat-raised-button (click)="togglePooped()">Poo</button>
       </div>
-      <div class="m-auto">
-        <button class="m-3" mat-raised-button color="primary">Submit</button>
+      <div class="mx-auto">
+        <button class="submit-button white-text m-3" mat-raised-button >Submit</button>
       </div>
     </div>
 </div>
