@@ -9,7 +9,7 @@ import { Entry } from './models/entry';
 @Injectable({
   providedIn: 'root'
 })
-export class BobaService {
+export class DogService {
   url: string = 'https://localhost:5001/api/Entries/'
 
   constructor(private http: HttpClient) { }
