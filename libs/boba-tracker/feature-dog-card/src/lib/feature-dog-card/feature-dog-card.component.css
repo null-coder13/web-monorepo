@@ -21,3 +21,7 @@
 .white-text {
   color: #EEEEEE !important;
 }
+
+mat-icon {
+  color: red;
+}
