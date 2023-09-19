@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve boba-tracker -o",
-    "build": "nx build",
+    "build": "nx build boba-tracker",
     "test": "nx test"
   },
   "private": true,

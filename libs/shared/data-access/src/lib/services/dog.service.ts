@@ -10,7 +10,7 @@ import { Entry } from './models/entry';
   providedIn: 'root'
 })
 export class DogService {
-  url: string = 'https://localhost:7283/api/Entries/'
+  url: string = 'https://localhost:5001/api/Entries/'
 
   constructor(private http: HttpClient) { }
 
