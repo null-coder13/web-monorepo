@@ -15,3 +15,5 @@ This application uses Firebase to store all data entries.
 ## UI
 
 Below is an image of the current UI for the Boba Tracker
+
+![UI](https://github.com/null-coder13/web-monorepo/assets/65193712/20117989-5277-4de4-955e-bb00b2a08964)
